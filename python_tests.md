@@ -9,6 +9,7 @@ Python, Tests, Unit Test, pytest
 
 ## Pytest
 
+### Fixtures
 Fixtures create reusable test state, write them in a conftest.py
 
 Its a good idea to follow some consistent naming scheme when writing fixtures.
@@ -49,6 +50,59 @@ def test_foo_and_bar(
     # test logic
 
     assert foo == bar, """Foo should equal bar"""
+```
+
+
+### Mocking
+Mocking prevents undesirable behavoir during testing, such as calling an API.
+
+Given a class `Foo` we wish to mock...
+
+*/workspace/utils/foo.py*
+```
+class Foo():
+    def call_api(self):
+    	return requests.get("https://stuff.com/api/some/stuff")
+```
+
+...and where foo is used...
+
+*/workspace/run/bar.py*
+```
+from workspace.utils.foo import Foo
+
+def bar():
+    foo = Foo()
+    return foo.call_api()
+```
+
+...create a fixture to mock `Foo`
+
+*/workspace/tests/conftest.py*
+```
+from unittest.mock import MagicMock
+
+@fixture
+def mock_foo():
+    mock_foo_instance = MagicMock()
+    mock_foo_instance.call_api.return_value = {"data": "mocked data"}
+    
+    mock_Foo_class = MagicMock(return_value=mock_foo_instance)
+    yield mock_Foo_class
+```
+
+Ensure to mock `Foo` where it is used `workspace.run.bar`, **not** where it is defined `workspace.utils.foo`. The class may have already been imported by the time we patch it.
+
+*workspace/tests/test_foo.py*
+```
+from unittest.mock import patch
+from workspace.run.bar import bar
+
+def test_foo(mock_foo):
+   with patch.object(workspace.run.bar, "Foo", mock_foo):
+       result = bar()
+       assert result['data'] == "mocked data"
+
 ```
 
 Now go forth and Unit Test.
