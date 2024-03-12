@@ -25,6 +25,13 @@ $ git commit -m '<TICKETID> - what these changes do'
 ### _...push my changes to remote_
 ```
 $ git push origin <branchname>
+
+### _...undo that last commit (unstage committed changes)_
+
+```
+$ git reset HEAD~1
+``` 
+
 ```
 ###  _...swap branch_
 #### _...pull from remote with local changes_ 
