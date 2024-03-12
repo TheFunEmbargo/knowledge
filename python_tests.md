@@ -59,7 +59,7 @@ Mocking prevents undesirable behavoir during testing, such as calling an API.
 Given a class `Foo` we wish to mock...
 
 */workspace/utils/foo.py*
-```
+```python
 class Foo():
     def call_api(self):
     	return requests.get("https://stuff.com/api/some/stuff")
@@ -68,7 +68,7 @@ class Foo():
 ...and where foo is used...
 
 */workspace/run/bar.py*
-```
+```python
 from workspace.utils.foo import Foo
 
 def bar():
@@ -79,7 +79,7 @@ def bar():
 ...create a fixture to mock `Foo`
 
 */workspace/tests/conftest.py*
-```
+```python
 from unittest.mock import MagicMock
 
 @fixture
@@ -94,7 +94,7 @@ def mock_foo():
 Ensure to mock `Foo` where it is used `workspace.run.bar`, **not** where it is defined `workspace.utils.foo`. The class may have already been imported by the time we patch it.
 
 *workspace/tests/test_foo.py*
-```
+```python
 from unittest.mock import patch
 from workspace.run.bar import bar
 
