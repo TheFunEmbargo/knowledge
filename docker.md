@@ -1,7 +1,9 @@
 # Docker
 
 
-## Notes
+
+
+## Commands
 
 Get all containers
 
@@ -17,6 +19,11 @@ Start / Stop
 
 `docker start [CONTAINER ID]`
 
+Connect to a container Interactively 
+
+[docker] [execute] [interactively] [container id] [command to execute]
+
+`docker exec -it 41a0f89993e4 bash`
  
 ## Concepts
 
