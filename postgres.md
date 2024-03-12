@@ -7,6 +7,10 @@ SQL, Postgres
 
 ## I want to
 
+### _...connect to a databse_
+
+`psql -h localhost -p 5432 -d database_name -U user_name`
+
 ### _...restore a backup_
 
 `psql -U postgres -d database_name  | gzip > /home/path/to/backup.sql`
