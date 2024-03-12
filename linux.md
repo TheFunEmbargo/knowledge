@@ -1,7 +1,9 @@
 # Linux
 
 
-## VM Management
+## VMs
+
+Connect `ssh -v <username>@<hostname> -i ~/.ssh/key.pem`
 
 Task Manager `top`
 
