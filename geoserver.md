@@ -41,6 +41,22 @@ create an empty dir to mount the container to `mkdir ~/mycontainer`
 
 Mount the store `blobfuse2 mount ~/mycontainer --config-file=./config.yaml`
 
+Unmount the store `sudo blobfuse2 unmount ~/mycontainer`
+
+### [Troubleshooting](https://github.com/Azure/azure-storage-fuse/blob/main/TSG.md#common-mount-problems)
+
+#### ...only the root user can access the mount?
+`allow-others: true` must be accompanied by unhashing the respective option in `/etc/fuse.conf`, being a libfuse level config. 
+
+#### ...only the root of the store is mounted?
+Ensure in Azure Storage Overview `Hierarchical namespace Enabled`
+
+In `config.yaml`
+
+remove `endpoint: https://xxx.blob.core.windows.net/`
+
+set `type: adls`
+
 ## Raster
 
 
