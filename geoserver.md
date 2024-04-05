@@ -72,7 +72,26 @@ Under Data, to add the raster as a layer
 
 `Stores > Add New Store > Geotiff`
 
-### [Image Mosaics]()
+Tile Caching TMS is the XYZ tile layer you're looking for, gridset EPSG:900913 is EPSG:3857
+
+The base url for the TMS should inspect like:
+
+```
+<TileMapService version="1.0.0" services="http://20.117.188.5:8080/geoserver/gwc/">
+	<Title>Tile Map Service</Title>
+	<Abstract>A Tile Map Service served by GeoWebCache</Abstract>
+	<TileMaps>
+		<TileMap title="whatever.you.called.your.geotiff" srs="EPSG:900913" profile="local" href="http://localhost:8080/geoserver/gwc/service/tms/1.0.0/workspace:whatever.you.called.your.geotiff@EPSG:900913@png"/>
+	</TileMaps>
+</TileMapService>
+```
+
+Take the href and add the XYZ bit: http://localhost:8080/geoserver/gwc/service/tms/1.0.0/workspace:whatever.you.called.your.geotiff@EPSG:900913@png/{z}/{x}/{y}.png 
+
+Note that you may have to invert y in qgis ie {z}/{x}/{-y}.png
+
+
+[Want to understand TMS/XYZ raster tiles and web (spherical) mercator?](https://gist.github.com/maptiler/fddb5ce33ba995d5523de9afdf8ef118#file-globalmaptiles-py)
 
 
 
