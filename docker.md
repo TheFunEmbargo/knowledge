@@ -24,6 +24,10 @@ Connect to a container Interactively
 [docker] [execute] [interactively] [container id] [command to execute]
 
 `docker exec -it 41a0f89993e4 bash`
+
+Cleanup old containers (...and images?)
+
+`docker system prune`
  
 ## Concepts
 
