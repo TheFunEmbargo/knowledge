@@ -11,6 +11,16 @@ UNIX system report, view Kernal events `dmesg -T`
 
 Search file `grep -i "oom" /var/log/syslog`
 
+Why is my disk full?  `du -sh ~/`
+
+
+## SSH Tunnel
+
+Open `ssh -fNM -S <whateveryouwishtocallthissocket> -i ~/.ssh/key.pem -L <localport>:<desthost>:<destport> <username>@<hostname>`
+
+Close `ssh -S <whateveryouwishtocallthissocket> -O exit <hostname>`
+ 
+
 
 ## Systemd
 Manage services
