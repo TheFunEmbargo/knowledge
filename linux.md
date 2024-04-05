@@ -104,6 +104,12 @@ Grant ownership of the service & Grant sudo permissions & Enable service managem
 `sudo systemctl restart sudo` (restart sudoers file for permission changes to take effect)
 
 
+## Ubuntu
+
+Get path in file explorer `ctrl+l`
+
+Kernel events (debug external devices) `dmesg`
+
 ## Notes
 
 A service could be a docker container
