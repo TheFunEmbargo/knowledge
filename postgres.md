@@ -11,11 +11,14 @@ SQL, Postgres
 
 `psql -h localhost -p 5432 -d database_name -U user_name`
 
-### _...restore a backup_
+### _...create a backup_
 
 `psql -U postgres -d database_name  | gzip > /home/path/to/backup.sql`
 
-`pscp -i <path_to_pem_file> <username>@<hostname>:<remote_file_path> <local_file_path>`
+### _...restore a backup_
+
+`psql -d database_name -f /home/path/to/backup.sql -U postgres`
+
 
 NOTE windows / linux line endings are important. You will have to convert between / use the same OS (maybe via docker?)
 
