@@ -13,6 +13,7 @@ Search file `grep -i "oom" /var/log/syslog`
 
 Why is my disk full?  `du -sh ~/`
 
+fetch something off a vm? `scp -i <path_to_pem_file> <username>@<hostname>:<remote_file_path> <local_file_path>`
 
 ## SSH Tunnel
 
