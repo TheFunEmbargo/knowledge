@@ -33,6 +33,10 @@ $ git reset HEAD~1
 ``` 
 
 ```
+$ git restore --staged <path/to/unstage>
+``` 
+
+```
 ###  _...swap branch_
 #### _...pull from remote with local changes_ 
 #### _...handle "error: Your local changes to the following files would be overwritten"_
@@ -41,6 +45,9 @@ $ git stash push -m 'these changes do some stuff'
 $ git checkout <branchname> $ git pull origin <branchname> 
 $ git stash pop 
 ```
+
+OR just commit the changes with -m "stash" then follow _...undo that last commit_ when you want them back
+
 ### _...I've branched from feature branch which has then been merged_  
 #### _...I wish to resurrect a branch that I've already merged_  
 #### _..."Theres stuff in my branch thats already in main?"_
@@ -63,7 +70,7 @@ _I messed up_ normal mode **:cq** to "cancel quit"
 
 _ready to rebase_ normal mode **:wq** to "write quit"
 
-  **/vim**
+**/vim**
 
 Conflicts? Resolve them and add the offending file
 
