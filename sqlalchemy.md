@@ -71,6 +71,7 @@ class SomeTable:
        session = Session.object_session(self)
 ```
 
+Inside a model, the session may be accessed `session = Session.object_from(self)`
 
 Stack these session object methods to construct queries 
 
@@ -78,11 +79,15 @@ pass in the entity you wish to return `.query()`
 
 pass in the table you wish to select from `.select_from()`
 
+add column `add_column()`
+
 corresponds to an outer join (either left or right, depending on the order of the tables) `.outerjoin()`   
 
 corresponds to an inner join `.join()`
 
-equivalent to SQL `.where()`       
+equivalent to SQL `.where()`      
+
+raw sql commands can be located via `from sqlalchemy import func` 
 
 
 
