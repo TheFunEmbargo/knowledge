@@ -4,6 +4,28 @@ Version Control Tool
 ## Tags
 Git, Devops
 
+## Gitflow
+
+```mermaid
+gitGraph
+   commit id: "Initial Commit"
+   branch develop
+   checkout develop
+   commit id: "Branch from develop"
+
+   branch TICKETID-description
+   checkout TICKETID-description
+   commit id: "Complete TICKETID Work"
+   checkout develop
+   merge TICKETID-description tag: "v1.x.x Deploy to staging"
+
+   checkout main
+   merge develop tag: "v1.x.x Deploy to Production"
+   commit id:  "  "
+
+   checkout develop
+   commit id: "  "
+```
 
 ## I want to...
 
