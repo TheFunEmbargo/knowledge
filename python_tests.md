@@ -105,4 +105,19 @@ def test_foo(mock_foo):
 
 ```
 
+To patch an object whilst retaining original methods
+
+*workspace/tests/test_foo.py*
+```python
+def test_foo():
+    import workspace 
+    
+    with patch.object(
+        workspace.run.Foo, "print_blah"
+    ) as mock_print_blah:
+        mock_print_blah.return_value = "not printing blah"
+	# test whatever needs testing
+```
+
+
 Now go forth and Unit Test.
