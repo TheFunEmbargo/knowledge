@@ -40,7 +40,7 @@ graph TD
 (see Agile Management & Kaban Planning)
 
 #### Review
-
+Have the success goals in the [specification document](spec_doc.md) been met? Demo to stakeholders.
 
 ## Agile Management & Kanban Planning
 
