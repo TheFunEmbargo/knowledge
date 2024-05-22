@@ -47,18 +47,14 @@ $ git commit -m '<TICKETID> - what these changes do'
 ### _...push my changes to remote_
 ```
 $ git push origin <branchname>
-
+```
 ### _...undo that last commit (unstage committed changes)_
 
 ```
 $ git reset HEAD~1
-``` 
-
-```
 $ git restore --staged <path/to/unstage>
 ``` 
 
-```
 ###  _...swap branch_
 #### _...pull from remote with local changes_ 
 #### _...handle "error: Your local changes to the following files would be overwritten"_
