@@ -114,6 +114,12 @@ gitGraph
    commit id: " "
 ```
 
+#### Code Review
+* [Author's Pull-Request description](https://google.github.io/eng-practices/review/developer/cl-descriptions.html) - sufficent to understand changes what/why?
+* Pair programming - pair review with the author is the quickest way to gain insight into the changes at the expense of asynchronicity.
+* [Design, Functionality, Complexity, Tests, Naming, Comments, Style, Docs](https://google.github.io/eng-practices/review/)
+* [Conventional Comments](https://conventionalcomments.org/) 
+
 #### Environments
 * Staging
 * Production
