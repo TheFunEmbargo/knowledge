@@ -9,6 +9,12 @@ Python, Tests, Unit Test, pytest
 
 ## Pytest
 
+### Run
+
+Run all tests `pytest`
+
+...or be specific about the test you're running: `pytest tests_folder/test_file.py::TestClass::test_function`
+
 ### Fixtures
 Fixtures create reusable test state, write them in a conftest.py
 

@@ -38,3 +38,7 @@ To update the database run `$ alembic upgrade head`
 To downgrade run `$ alembic downgrade -1`
 
 Best practice is to run up down up to ensure a traversable revision tree.
+
+## issues
+
+migration is hanging, the table may be locked see [postgres](postgresql.md)

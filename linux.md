@@ -20,8 +20,6 @@ fetch something off a vm? `scp -i <path_to_pem_file> <username>@<hostname>:<remo
 Open `ssh -fNM -S <whateveryouwishtocallthissocket> -i ~/.ssh/key.pem -L <localport>:<desthost>:<destport> <username>@<hostname>`
 
 Close `ssh -S <whateveryouwishtocallthissocket> -O exit <hostname>`
- 
-
 
 ## Systemd
 Manage services
@@ -111,7 +109,13 @@ Get path in file explorer `ctrl+l`
 
 Kernel events (debug external devices) `dmesg`
 
+`~/.bash_aliases`
+
 ## Notes
 
 A service could be a docker container
+
+
+
+
 
