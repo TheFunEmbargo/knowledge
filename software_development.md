@@ -16,7 +16,7 @@ Ask those who the project impacts, stakeholders and endusers.
 * What do you think would make this project a success?
 * What are your concerns?
 
-The outcome should be a [specification document](spec_doc.md). 
+The outcome should be a [specification document](project_spec_doc.md). 
 
 #### Design
 * Dataflow Diagrams (Miro, Draw.io, Excalidraw) - How does data move through the system? Human touch points?
@@ -40,7 +40,7 @@ graph TD
 (see Agile Management & Kaban Planning)
 
 #### Review
-Have the success goals in the [specification document](spec_doc.md) been met? Demo to stakeholders.
+Have the success goals in the [specification document](project_spec_doc.md) been met? Demo to stakeholders.
 
 ## Agile Management & Kanban Planning
 
