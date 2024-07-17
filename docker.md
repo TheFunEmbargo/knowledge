@@ -50,3 +50,9 @@ docker run --name my_postgres_container \
 Initialisation scripts can be placed in [/docker-entrypoint-initdb.d](https://hub.docker.com/_/postgres). However you could mount anything anywhere in the container...
 
 Connect to the container and load the sql in, if not done so on startup. (see postgres.md)
+
+
+
+## docker compose
+
+`docker compose up -d` run as daemon (in the background)
