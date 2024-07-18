@@ -98,7 +98,11 @@ _Include diagrams to illustrate the system architecture, data flow, and other re
 _Use a diagram library like Mermaid to create and include diagrams._
 
 ```mermaid
-graph TD     A[Start] --> B[Process]     B --> C[Decision]     C -->|Yes| D[End]     C -->|No| E[Alternate End]
+graph TD
+    A[Start] --> B[Process]
+    B --> C[Decision]
+    C -->|Yes| D[End]
+    C -->|No| E[Alternate End]
 ```
 
 ## 4. README
