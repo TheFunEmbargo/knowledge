@@ -2,6 +2,17 @@
 
 **v1.0.0**
 
+1.  [Introduction](#1-introduction)
+    1.  [Repository and Documentation](#12-repository-and-documentation)
+    2.  [Scope](#13-scope)
+    3.  [Team](#14-team)
+2.  [Specification](#2-specification)
+    1.  [Schedule](#21-schedule)
+    2.  [Tests](#22-tests)
+    3.  [Data](#23-data)
+3.  [Environment & Tooling](#3-environment--tooling)
+4.  [Risks and Contingencies](#4-risks-and-contingencies)
+
 ## 1. Introduction
 
 _This document provides a test specification for the project._

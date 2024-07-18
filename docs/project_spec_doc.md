@@ -1,5 +1,15 @@
 # Project Specification
 
+1.  [Introduction](#1-introduction)
+    1.  [Planned Ship Date](#11-planned-ship-date)
+    2.  [Links](#12-links)
+2.  [Details](#2-details)
+    1.  [Dependencies](#21-dependencies)
+    2.  [Outcome](#24-outcome)
+    3.  [Success](#25-success)
+3.  [Team](#3-team)
+4.  [Estimates and Deadlines](#4-estimates-and-deadlines)
+5.  [Questions](#5-questions)
 
 ## 1. Introduction 
 *In this section provide an introduction to the project. Provide the information needed to understand the project. What problem are you trying to solve? In brief, what is being built and why?*
