@@ -3,10 +3,12 @@
 **v1.0.0**
 
 1.  [Introduction](#1-introduction)
-    1.  [Definitions](#11-definitions)
-    2.  [The Need](#12-the-need)
-    3.  [Assumptions and Dependencies](#13-assumptions-and-dependencies)
-    4.  [Constraints](#14-constraints)
+    1.  [Repository and Documentation](#11-repository-and-documentation)
+    1.  [Team](#12-team)
+    1.  [Definitions](#13-definitions)
+    2.  [The Need](#14-the-need)
+    3.  [Assumptions and Dependencies](#15-assumptions-and-dependencies)
+    4.  [Constraints](#16-constraints)
 2.  [Questions](#2-questions)
 3.  [Specification](#3-specification)
     1.  [Features](#31-features)
@@ -22,21 +24,36 @@
 
 _What problem are you trying to solve? In brief, what is being built and why?_
 
-### 1.1 Definitions
+### 1.1 Repository and Documentation
+
+*   **Repository:** [GitHub Repo Link](https://github.com/your-repo)
+*   **Project Spec** [Project Spec Doc](https://github.com/your-repo/project-spec_doc.md)
+
+### 1.2 Team
+
+*List each team members role to be performed during the development.*
+
+| Name     | Role                   |
+|-----------------|:----------------------:|
+|                |                        |
+|                 |                        |
+|             	 |                        |
+
+### 1.3 Definitions
 
 _Define terms, acronyms, and abbreviations._
 
-### 1.2 The Need
+### 1.4 The Need
 
   |Problem  |Need | Source
   |---  |---  |---  |
   |_Present constraint_|_This would be alleviated by_|_Link to userstory/bug/discussion_|
 
-### 1.3 Assumptions and Dependencies
+### 1.5 Assumptions and Dependencies
 
 _Prerequisites, assumptions or dependencies of the feature._
 
-### 1.4 Constraints
+### 1.6 Constraints
 
 _What does this feature not cover?_
 

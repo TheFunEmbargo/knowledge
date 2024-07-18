@@ -33,7 +33,9 @@ graph TD
     C -->|No| E[Process #2]
     E --> F(Data #3)
 ```
-* [ADR](adr.md)
+*
+* [Test Specification](test_spec_doc.md)
+* [ADRs](adr.md)
 * Tickets
 
 #### Implementation
@@ -71,7 +73,7 @@ Tickets should be tagged/filterable by project and assinged a size based on esti
 ### Meetings
 	
 * Standup DAILY
-   * Right to left across the board with progress update per ticket
+   * Right to left across the board with progress update per ticket OR individual _stands up_ and says "yesterday I ... today I'll ... my blockers are ..."
    * Raise blockers
    * Assign reviewers to live PRs
 * Backlog refinement WEEKLY 
