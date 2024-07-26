@@ -26,7 +26,7 @@ To tell a story, pick a shape to punctuate with appeal and a narrative then spei
    The protagonist starts off bad but things manage to get worse from there. Sometimes, you turn into a bug.  
    *Example — Metamorphosis.*
 
-   ![FromBadtoWorse](/assets/rhetoric/shape/FromBadToWorse.png)
+   ![BadToWorse](/assets/rhetoric/shape/BadToWorse.png)
 
 4. **Which Way is Up? (The Complicated One)**  
    The character(s) goes through a series of seemingly random ups and downs. Often, the overall line slopes up despite the constant zigzag.  
