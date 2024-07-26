@@ -58,6 +58,29 @@ def test_foo_and_bar(
     assert foo == bar, """Foo should equal bar"""
 ```
 
+Functionalise fixtures if writing static fixtures is cumbersome.
+
+```python
+@pytest.fixture()
+def get_bar_with_foos(session):
+    def inner(time: datetime):
+        _id = "".join(random.choice(string.ascii_uppercase) for _ in range(3))
+        foo1 = Foo(name=f"{_id}_1", time=time)
+        foo2 = Foo(name=f"{_id}_2", time=time)
+        foo3 = Foo(name=f"{_id}_3", time=time)
+        three_foos = [
+            foo1,
+            foo2,
+            foo3,
+        ]
+        bar = Bar(foos=three_foos)
+        session.add(bar)
+        session.commit()
+        return bar
+
+    return inner
+```
+
 
 ### Mocking
 Mocking prevents undesirable behavoir during testing, such as calling an API.
