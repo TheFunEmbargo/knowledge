@@ -14,50 +14,50 @@ To tell a story, pick a shape to punctuate with appeal and a narrative then spei
    A character’s doing fine, gets herself into a huge problem, and must overcome it. They end up better than they started.  
    *Example — Die Hard.*
    
-   ![ManInHole](/assets/shape/ManInHole.png)
+   ![ManInHole](/assets/rhetoric/shape/ManInHole.png)
 
 2. **Boy Meets Girl**  
    The protagonist finds something wonderful (usually love), loses it, and then goes on a journey to get it back again.  
    *Example — The Proposal.*
 
-   ![BoyMeetsGirl](/assets/shape/BoyMeetsGirl.png)
+   ![BoyMeetsGirl](/assets/rhetoric/shape/BoyMeetsGirl.png)
 
 3. **From Bad to Worse (Kafkaesque)**  
    The protagonist starts off bad but things manage to get worse from there. Sometimes, you turn into a bug.  
    *Example — Metamorphosis.*
 
-   ![FromBadtoWorse](/assets/shape/FromBadtoWorse.png)
+   ![FromBadtoWorse](/assets/rhetoric/shape/FromBadtoWorse.png)
 
 4. **Which Way is Up? (The Complicated One)**  
    The character(s) goes through a series of seemingly random ups and downs. Often, the overall line slopes up despite the constant zigzag.  
    *Example — Game of Thrones.*
    
-   ![WhichWayisUp](/assets/shape/WhichWayisUp.png)
+   ![WhichWayisUp](/assets/rhetoric/shape/WhichWayisUp.png)
 
 5. **Creation Story**  
    This represents the idea of coming out of chaos and moving toward order and happiness. The shape slopes upwards but isn’t common in western culture.  
    *Example — The Lion King.*
 
-   ![CreationStory](/assets/shape/CreationStory.png)
+   ![CreationStory](/assets/rhetoric/shape/CreationStory.png)
 
 6. **Old Testament**  
    Characterized by cycles of good fortune and bad fortune, but typically ends in a downward direction. Think of it as a series of ups and downs that finally go down.  
    *Example — No Country for Old Men.*
 
-   ![OldTestament](/assets/shape/OldTestament.png)
+   ![OldTestament](/assets/rhetoric/shape/OldTestament.png)
 
 7. **New Testament**  
    The main character has progressively better fortune until, one day, something horrible happens. Then they have to figure out how to find “off the chart bliss.”  
    *Example — Shawshank Redemption.*
 
-   ![NewTestament](/assets/shape/NewTestament.png)
+   ![NewTestament](/assets/rhetoric/shape/NewTestament.png)
 
 8. **Cinderella (Rags-to-Riches)**  
    I’ll leave this description to Vonnegut:  
    “We’re gonna start way down here. Worse than that, who is so low? It’s a little girl… the shoe fits, and she achieves off-scale happiness.”  
    *Example — Harry Potter.*
 
-   ![Cinderella](/assets/shape/Cinderella.png)
+   ![Cinderella](/assets/rhetoric/shape/Cinderella.png)
 
 ## Appeal: Pathos, Ethos, and Logos
 
