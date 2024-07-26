@@ -26,13 +26,13 @@ To tell a story, pick a shape to punctuate with appeal and a narrative then spei
    The protagonist starts off bad but things manage to get worse from there. Sometimes, you turn into a bug.  
    *Example — Metamorphosis.*
 
-   ![FromBadtoWorse](/assets/rhetoric/shape/FromBadtoWorse.png)
+   ![FromBadtoWorse](/assets/rhetoric/shape/FromBadToWorse.png)
 
 4. **Which Way is Up? (The Complicated One)**  
    The character(s) goes through a series of seemingly random ups and downs. Often, the overall line slopes up despite the constant zigzag.  
    *Example — Game of Thrones.*
    
-   ![WhichWayisUp](/assets/rhetoric/shape/WhichWayisUp.png)
+   ![WhichWayisUp](/assets/rhetoric/shape/WhichWayIsUp.png)
 
 5. **Creation Story**  
    This represents the idea of coming out of chaos and moving toward order and happiness. The shape slopes upwards but isn’t common in western culture.  
