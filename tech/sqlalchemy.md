@@ -55,6 +55,29 @@ mapper_registry.map_imperatively(SomeTable, some_table)
 
 ...write some stuff...
 
+### Hybrid properties
+
+Need a dynamic property to work as in an expression and as a ... property?
+
+```python
+from sqlalchemy.ext.hybrid import hybrid_property
+from sqlalchemy import ColumnElement
+
+
+@hybrid_property
+def foo(self) -> int:
+    """For the Resolvable mixin interface."""
+    return self.whatever_your_aliasing
+
+@foo.inplace.expression  # type: ignore  # 'inplace' is not a valid attribute of 'hybrid_property'
+def _foo(cls) -> ColumnElement[int]:
+    query = (
+        select(ExampleTable.id)
+        .join(Foo, Foo.example_table_id == ExampleTable.id)
+        .scalar_subquery()
+    )
+    return query
+```
 
 ## Writing queries with the ORM
 
