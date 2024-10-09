@@ -18,6 +18,8 @@ pyenv install 3.10
 pyenv global 3.10
 ```
 
+Local sets the python to use to a specific dir, global ... globally 
+
 
 Install python dependencies from `pyproject.toml` file
 
