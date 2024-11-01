@@ -28,6 +28,10 @@ Connect to a container Interactively
 Cleanup old containers (...and images?)
 
 `docker system prune`
+
+flag for root user
+
+`--user 0`
  
 ## Concepts
 
