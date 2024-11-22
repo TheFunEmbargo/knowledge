@@ -1,8 +1,5 @@
 # Docker
 
-
-
-
 ## Commands
 
 Get all containers
@@ -33,7 +30,7 @@ flag for root user
 
 `--user 0`
  
-## Concepts
+## Containerising Database seeds
 
 Running DBs in dockerised containers for development, allowing you to swap between up'd containers to test different database seeds.
 
@@ -56,7 +53,106 @@ Initialisation scripts can be placed in [/docker-entrypoint-initdb.d](https://hu
 Connect to the container and load the sql in, if not done so on startup. (see postgres.md)
 
 
+## Dockerising a generic Fast API, Alembic, Postgres Stack
 
-## docker compose
+Dockerise the alembic migrations `/app/docker/Dockerfile.alembic`
+```
+FROM python:3.10-slim
 
-`docker compose up -d` run as daemon (in the background)
+# POSTGRES system dependencies
+# build-essential for psycopg2
+# libpq-dev for pg_config
+RUN apt-get update \
+    && apt-get install -y \
+    build-essential \
+    libpq-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+RUN pip install poetry
+
+# poetry configuration files
+COPY pyproject.toml poetry.lock* /app/
+RUN poetry install --only migration
+
+# alembic configuration and migration scripts
+COPY alembic.ini /app/
+COPY alembic /app/alembic
+
+# run alembic migrations
+CMD ["poetry", "run", "alembic", "upgrade", "head"]
+
+```
+
+dockerise the FastAPI app `/app/docker/Dockerfile.app`
+
+```
+FROM python:3.10-slim
+WORKDIR /app
+
+# POSTGRES system dependencies
+# build-essential for psycopg2
+# libpq-dev for pg_config
+RUN apt-get update \
+    && apt-get install -y \
+    build-essential \
+    libpq-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# poetry configuration files
+COPY pyproject.toml poetry.lock* /app/
+RUN poetry install
+
+# application code
+COPY . .
+
+# expose port and run
+EXPOSE 8000
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+```
+
+combine the services to be handled witha single command `docker-compose.production.yml`
+```yml
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile.app
+    env_file:
+      - .env
+    ports:
+      - "${PORT-8000}:8000"
+    volumes:
+      - /var/log/app/:/logs/
+  alembic:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile.alembic
+    env_file:
+      - .env
+    command: ["poetry", "run", "alembic", "upgrade", "head"]
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: database
+    ports:
+      - "5432:5432"
+```
+
+modify `alembic/env.py` to connect to postgres
+
+```python
+database_url = f"postgresql+psycopg2://{username}:{password}@{host}:{port}/{database}"
+
+# this is the Alembic Config object, which provides
+# access to the values within the .ini file in use.
+config = context.config
+config.set_main_option("sqlalchemy.url", database_url)
+```
+
+`docker compose up -f docker-compose.production.yml -d --build` run as daemon (in the background) & build to ensure latest changes
+`docker compose down -f docker-compose.production.yml` kill the service
+

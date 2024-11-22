@@ -7,6 +7,8 @@ SQL, Postgres
 
 ## I want to
 
+Note: preface these commands with `docker run -it --rm postgres:latest ` to run psql from anywhere
+
 ### _...connect to a databse_
 
 `psql -h localhost -p 5432 -d database_name -U user_name`
@@ -19,8 +21,30 @@ SQL, Postgres
 
 `psql -d database_name -f /home/path/to/backup.sql -U postgres`
 
-
 NOTE windows / linux line endings are important. You will have to convert between / use the same OS (maybe via docker?)
+
+Use [pgloader](https://pgloader.readthedocs.io/en/latest/index.html) for more complex data migrations
+
+define migration instruction set file
+
+```migration_instructions.load
+LOAD DATABASE
+    FROM sqlite:///home/user/path/to/database.db
+    INTO postgresql://USERNAME:PASSWORD@HOST:PORT/DATABASE?sslmode=allow
+
+ WITH data only;
+```
+
+execute the migration
+
+```
+docker run -it --rm \
+  -v "/var/app/prod/migration_instructions.load:/data/db.load" \
+  -v "/var/app/prod/ibex_staging.db:/data/sqlite.db" \
+  dimitri/pgloader:latest \
+  pgloader /data/db.load
+``` 
+
 
 
 ### _...kill a lock_
