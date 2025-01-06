@@ -4,7 +4,8 @@
 ### Pyenv & Poetry
 - Pyenv manages Python versions. To install: [Linux/Mac](https://github.com/pyenv/pyenv#installation) / [Windows](https://github.com/pyenv/pyenv#installation).
 - Poetry manages dependencies. Install globally with `pip install --upgrade pip && pip install poetry`
-
+- Life is easier with project directory environments `poetry config virtualenvs.in-project true`
+  
 Install python version from `.python-version` file
 
 ```shell
