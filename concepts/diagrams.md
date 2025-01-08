@@ -1,8 +1,8 @@
 # c4 diagrams
 
 Org wide archietecture
-https://c4model.tools/
-
+* https://structurizr.com/dsl
+  
 # mermaid
 
 Embeddable in a repo
