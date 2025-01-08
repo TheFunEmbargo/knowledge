@@ -6,3 +6,4 @@
 ## Websites I like the design of
 
 * [goofy big boardered bold pastels](https://youform.com/)
+* [smart beige](https://www.outsite.co/es)
