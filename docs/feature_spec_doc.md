@@ -99,8 +99,8 @@ _Use a diagram library like Mermaid to create and include diagrams._
 
 ```mermaid
 graph TD
-    A[Start] --> B[Process]
-    B --> C[Decision]
+    A[Start] --> F((Data)) --> B[Process] --> G((Data))
+    G --> C{Decision}
     C -->|Yes| D[End]
     C -->|No| E[Alternate End]
 ```
