@@ -6,3 +6,12 @@ Org wide archietecture
 # mermaid
 
 Embeddable in a repo
+
+dataflow 
+```
+graph TD
+    A[Start] --> F((Data)) --> B[Process] --> G((Data))
+    G --> C{Decision}
+    C -->|Yes| D[End]
+    C -->|No| E[Alternate End]
+```
