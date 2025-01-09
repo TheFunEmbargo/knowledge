@@ -48,25 +48,25 @@ Have the success goals in the [specification document](project_spec_doc.md) been
 
 ### Tickets & Columns
 
-Tickets should be tagged/filterable by project and assinged a size based on estimated effort
+Tickets should be tagged/filterable by project and assinged a size based on estimated effort.
 
-* Triage - New requests and bugs are entered into for review at backlog
+Tickets preferably have a specific problem or feature statement as the name, avoid implementation detail here.
+
+* Triage - New requests and bugs are entered here for review at backlog, assign to someone to write out the ticket.
 ```
 **As a ... 
 **I would like** ...
 **Such that** ...
-```
-* Spec - Tickets that require a specification
-```
+
 **options** ... various solutions
 **techinal details** ... link to docs, relevant considerations
 **acceptance criteria** ... when is this ticket done?
 **questions** ... uncertainty remaining and who to ask
 ```
-* Sprint Backlog - Spec'd tickets for next sprint
+* Sprint Backlog - Spec'd tickets for next sprint (If this column grows unmanagable then split into: Next Spint, This Quater, Quater Backlog)
 * Sprint - work for this sprint
 * In-progress - work underway
-* Review - Assign reivewer to PR 
+* Review - Assign reivewer to PR (If this column grows unmanagable then split into: Ready for Review, In Review )
 * Complete - done!
 
 
@@ -79,7 +79,7 @@ Tickets should be tagged/filterable by project and assinged a size based on esti
 * Backlog refinement WEEKLY 
    * Review tickets in Triage
    * Do / dont do
-   * Detail & move into Spec
+   * Detail & move into Sprint Backlog
 * Sprint plannning BIWEEKLY
    * Move tickets from Spring Backlog into Sprint
 * Retro BIWEEKLY
@@ -123,6 +123,7 @@ gitGraph
 * [Conventional Comments](https://conventionalcomments.org/) 
 
 #### Environments
+* Development
 * Staging
 * Production
 
