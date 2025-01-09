@@ -8,7 +8,7 @@ Org wide archietecture
 Embeddable in a repo
 
 dataflow 
-```
+```mermaid
 graph TD
     A[Start] --> F((Data)) --> B[Process] --> G((Data))
     G --> C{Decision}
