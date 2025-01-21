@@ -69,6 +69,12 @@ Tickets preferably have a specific problem or feature statement as the name, avo
 * Review - Assign reivewer to PR (If this column grows unmanagable then split into: Ready for Review, In Review )
 * Complete - done!
 
+#### Updating Tickets
+
+At the end of your workday update the ticket with a comment indicating progress, tagging those whose input is required eg for review. In doing so you have:
+* Transparency on work
+* Colleagues are notified and can asynchronously action your needs
+* Standup is quicker being simply a nod to each ticket's comment
 
 ### Meetings
 	
@@ -87,7 +93,7 @@ Tickets preferably have a specific problem or feature statement as the name, avo
    * Good
    * Bad
    * Actions - formalise the good, mitigate the bad. Add triage tickets for actions. 
-* Demo BIWEEKLY
+* Demo MONTHLY
    * Show stakeholders the live work
 
 
