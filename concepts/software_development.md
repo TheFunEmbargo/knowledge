@@ -101,20 +101,22 @@ At the end of your workday update the ticket with a comment indicating progress,
 
 #### Version Control
 
+Releases to staging & prod are to be tagged and versioned à la [Semantic Versioning](https://semver.org/spec/v2.0.0.html) consistent with the changelog.
+
 ##### Github Flow
 
-Github flow is prefered, as it avoids the long lived development branch & encourages continous small releases
+Github flow is prefered, as it avoids the long lived development branch & encourages continous small releases.
 
 ```mermaid
 gitGraph
     commit id: "Checkout & pull latest main"
     branch TICKETID-description
     commit id: "TICKETID commit"
-    commit id: "Complete TICKETID Work"
-    merge TICKETID-description tag: "Deploy to Staging & test"
+    commit id: "Complete TICKETID Work" tag: "Deploy to Staging & test"
     checkout main
-    merge TICKETID-description id: "Merge feature branch"
-    merge main tag: "Deploy to Production"
+    merge TICKETID-description id: "Merge feature branch" tag: "Deploy to Production"
+    checkout TICKETID-description
+    checkout main
 ```
 
 ##### Git Flow
