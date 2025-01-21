@@ -101,6 +101,24 @@ At the end of your workday update the ticket with a comment indicating progress,
 
 #### Version Control
 
+##### Github Flow
+
+Github flow is prefered, as it avoids the long lived development branch & encourages continous small releases
+
+```mermaid
+gitGraph
+    commit id: "Checkout & pull latest main"
+    branch TICKETID-description
+    commit id: "TICKETID commit"
+    commit id: "Complete TICKETID Work"
+    checkout main
+    merge TICKETID-description id: "Merge feature branch"
+    commit id: "Deploy to Staging & test"
+    commit id: "Deploy to Production"
+```
+
+##### Git Flow
+
 ```mermaid
 gitGraph
    commit id: "Initial Commit"
