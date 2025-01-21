@@ -111,9 +111,9 @@ gitGraph
     branch TICKETID-description
     commit id: "TICKETID commit"
     commit id: "Complete TICKETID Work"
+    commit id: "Deploy to Staging & test"
     checkout main
     merge TICKETID-description id: "Merge feature branch"
-    commit id: "Deploy to Staging & test"
     commit id: "Deploy to Production"
 ```
 
