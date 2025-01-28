@@ -7,3 +7,4 @@
 * [zero downtime docker compose deployments](https://www.tines.com/blog/simple-zero-downtime-deploys-with-nginx-and-docker-compose/)
 * [this guy has some cool ideas to read about maybe](https://dotclub.club/)
 * [petabytes of storage on a budget](https://www.backblaze.com/blog/petabytes-on-a-budget-how-to-build-cheap-cloud-storage/)
+* [git like data versioning](https://isaacjordan.me/blog/2025/01/data-branching-for-batch-job-systems)
