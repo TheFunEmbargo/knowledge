@@ -4,6 +4,7 @@
 * [code autocomplete](https://supermaven.com/)
 * [ai search engine](https://www.phind.com/)
 * [cloud optimised geospatial dataformats](https://guide.cloudnativegeo.org/)
+* [slippy maps from geotiffs](https://github.com/cogeotiff/rio-tiler)
 * [ogc fastapi, postgis backend](https://github.com/microsoft/ogc-api-fast-features/tree/main)
 * [geoserver alternative ogc python server](https://github.com/geopython/pygeoapi)
 * [geospatial routing](https://github.com/motis-project/motis)
