@@ -4,6 +4,7 @@
 * [code autocomplete](https://supermaven.com/)
 * [ai search engine](https://www.phind.com/)
 * [geospatial cloud](https://guide.cloudnativegeo.org/)
+* [ogc python server](https://github.com/geopython/pygeoapi)
 * [geospatial routing](https://github.com/motis-project/motis)
 * [map tiles](https://github.com/hyperknot/openfreemap)
 * [bare metal servers for cheap](https://contabo.com)
