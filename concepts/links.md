@@ -1,5 +1,6 @@
 # Links to blogs n stuff thats useful
 
+* [tech news](https://news.ycombinator.com/news)
 * [code autocomplete](https://supermaven.com/)
 * [ai search engine](https://www.phind.com/)
 * [geospatial cloud](https://guide.cloudnativegeo.org/)
