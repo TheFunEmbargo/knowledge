@@ -1,4 +1,4 @@
-# Links to blogs n stuff thats useful
+# Links to useful stuff
 
 * [tech news](https://news.ycombinator.com/news)
 * [code autocomplete](https://supermaven.com/)
