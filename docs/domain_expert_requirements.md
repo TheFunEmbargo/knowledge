@@ -1,6 +1,6 @@
 # Domain Expert Requirements Specification
 
-This document is markdown. Copy and paste into stackedit.io/app to get started!
+This document is [markdown](https://www.markdownguide.org/). Copy and paste into a [Markdown Editor](https://stackedit.io/app) or [convert to a Word document](https://cloudconvert.com/md-to-odt) to get started!
 
 ## 1. Introduction  
 
