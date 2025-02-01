@@ -1,4 +1,4 @@
-# Domain Expert Requirements Specification
+# Subject Matter Expert Knowledge Share
 
 This document is [markdown](https://www.markdownguide.org/). Copy and paste into a [Markdown Editor](https://stackedit.io/app) or [convert to a Word document](https://cloudconvert.com/md-to-odt) to get started!
 
