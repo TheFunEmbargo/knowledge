@@ -9,6 +9,7 @@
 * [geoserver alternative ogc python server](https://github.com/geopython/pygeoapi)
 * [geospatial routing](https://github.com/motis-project/motis)
 * [map tiles](https://github.com/hyperknot/openfreemap)
+* [lonlat to xyz](https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#Lon..2Flat._to_tile_numbers_2)
 * [bare metal servers for cheap](https://contabo.com)
 * [petabytes of storage on a budget](https://www.backblaze.com/blog/petabytes-on-a-budget-how-to-build-cheap-cloud-storage/)
 * [zero downtime docker compose deployments](https://www.tines.com/blog/simple-zero-downtime-deploys-with-nginx-and-docker-compose/)
