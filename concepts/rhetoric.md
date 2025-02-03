@@ -1,3 +1,7 @@
+# Communication
+
+* [SQCA](https://analytic-storytelling.com/scqa-what-is-it-how-does-it-work-and-how-can-it-help-me/)
+
 # Story telling
 
 To tell a story, pick a shape to punctuate with appeal and a narrative then speil.
