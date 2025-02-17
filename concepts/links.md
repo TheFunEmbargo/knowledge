@@ -1,6 +1,7 @@
 # Links to useful stuff
 
 * [tech news](https://news.ycombinator.com/news)
+* [1m free users auth](https://workos.com/)
 * [code autocomplete](https://supermaven.com/)
 * [ai search engine](https://www.phind.com/)
 * [cloud optimised geospatial dataformats](https://guide.cloudnativegeo.org/)
