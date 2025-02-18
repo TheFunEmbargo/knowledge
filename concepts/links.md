@@ -2,6 +2,7 @@
 
 * [tech news](https://news.ycombinator.com/news)
 * [1m free users auth](https://workos.com/)
+* [colours for design](https://colorkit.co/color-clock/)
 * [code autocomplete](https://supermaven.com/)
 * [ai search engine](https://www.phind.com/)
 * [cloud optimised geospatial dataformats](https://guide.cloudnativegeo.org/)
