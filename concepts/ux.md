@@ -8,3 +8,4 @@
 * [goofy big boardered bold pastels](https://youform.com/)
 * [smart beige](https://www.outsite.co/es)
 * [a ruddy simple proposal landing page](https://locale.ai/)
+* [buisness card landing page](https://www.enhancedradar.com/)
