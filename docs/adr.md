@@ -1,22 +1,20 @@
 # Decision record template
 
-This is the template in [Documenting architecture decisions - Michael Nygard](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions).
-You can use [adr-tools](https://github.com/npryce/adr-tools) for managing the ADR files.
-Keep ADRs in the project repository under /doc/adr/ 
+This is based on [Documenting architecture decisions - Michael Nygard](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions).
 
-In each ADR file, write these sections:
+In each ADR file, delete this line & above before writing these sections:
 
 # Title
 
-These documents have names that are short noun phrases. For example, "ADR 1: Deployment on Ruby on Rails 3.0.10" or "ADR 9: LDAP for Multitenant Integration"
-
-## Status
-
-What is the status, such as proposed, accepted, rejected, deprecated, superseded, etc.?
+These documents have names that are short noun phrases. For example, "001 Difficult Thing we had to Figure out (2025-02-18)" or "002 LDAP for Multitenant Integration (2025-02-18)"
 
 ## Context
 
 What is the issue that we're seeing that is motivating this decision or change?
+
+## Options
+
+What have we considered? Pros & Cons?
 
 ## Decision
 
