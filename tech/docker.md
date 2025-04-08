@@ -111,7 +111,10 @@ EXPOSE 8000
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 ```
 
-combine the services to be handled witha single command `docker-compose.production.yml`
+combine the services to be handled with a single command `docker-compose.production.yml`
+
+haven't quiet concluded whether `.[env].yaml` files, using `--profile`, using `.env.[env]` files or some combination of these is best for environment seperation. 
+
 ```yml
 services:
   app:
@@ -123,6 +126,7 @@ services:
     ports:
       - "${PORT-8000}:8000"
     volumes:
+        # Only ever mount data dirs, never code dirs as side effects can be weird (e.g. messing with your python env)
       - /var/log/app/:/logs/
   alembic:
     build:

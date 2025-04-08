@@ -1,6 +1,6 @@
 # Software Development
 
-How to write code.
+How to write code. All teams are different, your mileage may vary.
 
 ## Project Lifecycle
 
@@ -33,7 +33,7 @@ graph TD
     C -->|No| E[Process #2]
     E --> F(Data #3)
 ```
-*
+
 * [Test Specification](test_spec_doc.md)
 * [ADRs](adr.md)
 * Tickets
@@ -48,7 +48,7 @@ Have the success goals in the [specification document](project_spec_doc.md) been
 
 ### Tickets & Columns
 
-Tickets should be tagged/filterable by project and assinged a size based on estimated effort.
+Tickets should be tagged/filterable by project and assigned a size based on estimated effort.
 
 Tickets preferably have a specific problem or feature statement as the name, avoid implementation detail here.
 
@@ -58,11 +58,15 @@ Tickets preferably have a specific problem or feature statement as the name, avo
 **I would like** ...
 **Such that** ...
 
+**assignee**
+**reviewer**
+
 **options** ... various solutions
 **techinal details** ... link to docs, relevant considerations
 **acceptance criteria** ... when is this ticket done?
 **questions** ... uncertainty remaining and who to ask
 ```
+* Ideation & Discovery  - Discovery tickets which will result in user stories, discussion of new features / products.
 * Sprint Backlog - Spec'd tickets for next sprint (If this column grows unmanagable then split into: Next Spint, This Quater, Quater Backlog)
 * Sprint - work for this sprint
 * In-progress - work underway

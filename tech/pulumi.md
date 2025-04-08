@@ -41,17 +41,17 @@ export ARM_TENANT_ID=
 * [toolkit for creating functions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=linux%2Cisolated-process%2Cnode-v4%2Cpython-v2%2Chttp-trigger%2Ccontainer-apps&pivots=programming-language-csharp)
 
 
-## How to structure IAC
+## How to structure a shared repo for common IAC
 
 0. Add pulumi to the project `poetry add pulumi`
-1. Create a "shared" repo with a module containing your shared infrastructure. Add this submodule to your repo. 
+1. Create a "shared" repo with a module containing your common infrastructure & helpers. Add this submodule to your repo. 
 
 ```
 git submodule add git@github.com:Company/company-shared.git company_shared
 git submodule update --init --recursive
 ```
-2. The "company_shared/company_infra" needs to create a secrets provider for future project stacks. This may be a keyvault. Other generic infrastructure such as `create_postgres_server` should also be included in shared.
-
+2. The "company_shared/company_infra" needs to create a secrets provider for future project stacks. This is common infrastructure which should be spun up in a common stack (see Common Stack section below for more) under a `common` folder. The secrets provider may be a keyvault, other examples of common infra are container registry & networks. Other generic infrastructure helpers such as `create_resource_group`, `create_key_vault` & `create_postgres_server` should also be included in shared under a `helpers` folder.
+ 
 3. Install your shared infra as a module
 
 ```
@@ -89,11 +89,13 @@ config:
 ```
 secretsprovider: azurekeyvault://<keyvault-name>.vault.azure.net/keys/<key-name>
 config:
-  pivotalInfra:commonStackName: dev
+  companyInfra:commonStackName: dev
 ```
 3.[Create another stack](https://www.pulumi.com/docs/iac/cli/commands/pulumi_stack_init/). 
 
+## Common Stack
 
+1. Common stack infrastructure can be made available to other stacks via `pulumi.StackReference`
 
 
 

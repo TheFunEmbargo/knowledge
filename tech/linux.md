@@ -111,6 +111,8 @@ Kernel events (debug external devices) `dmesg`
 
 `~/.bash_aliases`
 
+Sort out your harddrive on reboot `shutdown -rF`
+
 ## Notes
 
 A service could be a docker container
