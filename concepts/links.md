@@ -11,6 +11,8 @@
 * [geoserver alternative ogc python server](https://github.com/geopython/pygeoapi)
 * [geospatial routing](https://github.com/motis-project/motis)
 * [map tiles](https://github.com/hyperknot/openfreemap)
+* [Landuse Classifier](https://github.com/aokdata/Land_Cover_Classification)
+* [Landcover](https://land.copernicus.eu/en/products/global-dynamic-land-cover)
 * [lonlat to xyz](https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#Lon..2Flat._to_tile_numbers_2)
 * [find emails and phone number by names](https://www.signalhire.com/)
 * [agent based city modelling](https://medium.com/arupcitymodelling)
