@@ -6,6 +6,7 @@ Trackable metric for success. Each priority should move a value indicator. Estim
 * Days in a month spent on grill maintenance - currently 5 days/month.
 * Time between customer ordering and receiving hotdog - currently 10 mins.
 * Weekly 5* Reviews of hotdogs - currently 3/week.
+
 The idea is not too focused (you want team/cross team scope to impact, not the sole responsibility of an individual) and not too high level as to be all encompassing. A metric such as "Number of hotdogs sold" is too vague as all the above metrics could contribute to improving this, so focus in on individual contributing factors. These should be quantifiable. e.g. you can stop watch time between customer ordering and getting the hotdog.
 
 
