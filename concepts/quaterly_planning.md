@@ -27,7 +27,7 @@ Assess each with the technical team to assess a notion of what could be done (hu
 Man hours x weeks in Quarter = weeks of capacity. Compare against your tee shirt sized key priorities.
 ```
 XS - 1 day
-S - 1/2 week
+S - 0.5 week
 M - 1 week
 L - 2 week
 XL - > 2 Weeks
@@ -45,13 +45,22 @@ Assess your priorities against the value indicators and estimate how much they c
 
 "Hotdogs stick to the grill and burn" impacts "Days spent on grill maintenance". Impact of 2 according to stakeholders. Possible solution is use more oil. S to implement and test. Would reduce days spent on maintenance by 2 days / month moving the value indicator from 5 to 3.
 
-Use a table with appropriate headers .
+Use a table with appropriate headers.
 
 Of the two assessed  one is a good bet: small, well scoped and clear. The other has potential for greater impact, but requires investigation and is more uncertain. We want mostly to be doing guaranteed wins, but shouldn't shy away from a more risky bet especially with high impact. Now we are in a better place to decide what to do next.
 
 ## Iteration
 
-You only need to plan the next sprint. Then reassess against value metrics in a ritual & iterate.
+You only need to plan the next sprint. Then reassess against value metrics in a retro ritual & iterate.
+
+Do this based on learning / wins / questions / blockers.
+
+* Learning, customers hate queuing and prefer the ticket system.
+* Win, we're now using more oil, less hotdogs sticking.
+* Question, where can I buy cheap tickets?
+* Blocker, hotdog van has a flat tyre.
+
+These allow you to evolve direction of movement based on reflecting on completed work's impact on priorities.
 
 ### Ideas I didn't manage to include
 
