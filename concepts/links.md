@@ -22,6 +22,7 @@
 * [zero downtime docker compose deployments](https://www.tines.com/blog/simple-zero-downtime-deploys-with-nginx-and-docker-compose/)
 * [software lifecycle / team management ideas](https://dotclub.club/)
 * [git like data versioning](https://isaacjordan.me/blog/2025/01/data-branching-for-batch-job-systems)
+* [email with stuff drafter](maily.to)
 
 
 * [git setup](https://blog.gitbutler.com/how-git-core-devs-configure-git/)
