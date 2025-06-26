@@ -26,6 +26,7 @@
 * [email with stuff drafter](maily.to)
 * [decision making](https://longform.asmartbear.com/maximized-decision/)
 * [how to run a small dev team](https://blog.railway.com/p/how-we-work)
+* [on the virtues of remote work](https://blog.railway.com/p/how-we-work-volume-ii)
 
 
 * [git setup](https://blog.gitbutler.com/how-git-core-devs-configure-git/)
