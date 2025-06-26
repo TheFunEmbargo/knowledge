@@ -23,6 +23,7 @@
 * [software lifecycle / team management ideas](https://dotclub.club/)
 * [git like data versioning](https://isaacjordan.me/blog/2025/01/data-branching-for-batch-job-systems)
 * [email with stuff drafter](maily.to)
+* [decision making](https://longform.asmartbear.com/maximized-decision/)
 
 
 * [git setup](https://blog.gitbutler.com/how-git-core-devs-configure-git/)
