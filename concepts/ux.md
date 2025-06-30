@@ -6,6 +6,7 @@
 ## Websites I like the design of
 
 * [retro fun](https://www.gradient.ai/)
+* [newspaper vibe](https://www.gemnote.com/)
 * [wow business](https://paleblue.vc/)
 * [goofy big boardered bold pastels](https://youform.com/)
 * [smart beige](https://www.outsite.co/es)
