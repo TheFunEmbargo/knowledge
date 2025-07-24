@@ -28,6 +28,7 @@
 * [how to run a small dev team](https://blog.railway.com/p/how-we-work)
 * [on the virtues of remote work](https://blog.railway.com/p/how-we-work-volume-ii)
 * [shadcn theme editor](https://tweakcn.com/editor/theme)
+* [react fancy bits](https://reactbits.dev)
 
 
 * [git setup](https://blog.gitbutler.com/how-git-core-devs-configure-git/)
