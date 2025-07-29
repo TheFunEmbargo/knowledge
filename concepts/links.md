@@ -32,3 +32,7 @@
 
 
 * [git setup](https://blog.gitbutler.com/how-git-core-devs-configure-git/)
+
+
+* [stock images](https://www.pexels.com)
+* [upscale images](https://image-upscaling.net/upscaling/en.html)
